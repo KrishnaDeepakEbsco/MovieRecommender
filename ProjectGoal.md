@@ -1,6 +1,6 @@
 # Movie Recommender
 
-Recommend movie titles to Users based on ratings, genre, tags
+Recommend movie titles to Users based on ratings
 
 # DataSets
 
@@ -19,13 +19,10 @@ Movie Lens:
     
  # Modeling Strategy
  
- Format data of user ratings into time based events.
  
- Classify movies into
-   - Awesome Movie - 5
-   - Good Movie - 3.5 to 4.5
-   - Average Movie - 2.5 to 3.5
-   - Bad Movie - 0.5 to 2
+1. Binary classification - Movies rated 4 and above are considered for modeling (Like/dont like)
+2. Recommend movie to user based on above classification using nearest neighbour model.
+   
    
  # End Goal
  
